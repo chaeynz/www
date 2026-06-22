@@ -5,6 +5,10 @@ body {
   line-height: 1.6;
   height: 100vh;
   margin: 0;
+  /* Reserve the fixed sidebar's width so centered content stays centered
+     in the remaining space instead of under the sidebar. */
+  padding-right: 300px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -67,7 +71,6 @@ a:hover {
   padding: 6px;
   box-sizing: border-box;
   border-left: 2px ridge;
-  background-color: black;
   text-align: center;
 }
 
