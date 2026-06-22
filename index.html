@@ -5,15 +5,18 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div hx-get="/partials/nav.html" hx-trigger="load" hx-swap="outerHTML"></div>
-  <div hx-get="/partials/sidebar.html" hx-trigger="load" hx-swap="outerHTML"></div>
+  <div class="content">
+    <div hx-get="/partials/nav.html" hx-trigger="load" hx-swap="outerHTML"></div>
 
-  <div class="screen">
-    <div>
-      <h1>hello world</h1>
-      <p>hi, i am chaeynz</p>
+    <div class="screen">
+      <div>
+        <h1>hello world</h1>
+        <p>hi, i am chaeynz</p>
+      </div>
     </div>
   </div>
+
+  <div hx-get="/partials/sidebar.html" hx-trigger="load" hx-swap="outerHTML"></div>
 
 
   <script src="https://unpkg.com/htmx.org@2"></script>

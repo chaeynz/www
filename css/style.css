@@ -5,10 +5,13 @@ body {
   line-height: 1.6;
   height: 100vh;
   margin: 0;
-  /* Reserve the fixed sidebar's width so centered content stays centered
-     in the remaining space instead of under the sidebar. */
-  padding-right: 300px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
@@ -58,11 +61,8 @@ a:hover {
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
+  flex: none;
   width: 300px;
-  height: 100vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
