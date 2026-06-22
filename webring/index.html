@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>chaeynz · webring</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div hx-get="/partials/nav.html" hx-trigger="load" hx-swap="outerHTML"></div>
+
+  <div class="screen">
+    <nav class="webring">loading webring…</nav>
+  </div>
+
+  <script src="https://unpkg.com/htmx.org@2"></script>
+  <script src="/js/ticker.js"></script>
+  <script src="/js/webring.js"></script>
+</body>
+</html>
