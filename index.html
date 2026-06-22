@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>chaeynz</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="/">home</a>
-    <a href="/webring">webring</a>
-  </nav>
-  <main>
-    <h1>hello world</h1>
-    <p>hi, i am chaeynz</p>
-  </main>
+  <div hx-get="/partials/nav.html" hx-trigger="load" hx-swap="outerHTML"></div>
+
+  <div class="screen">
+    <div>
+      <h1>hello world</h1>
+      <p>hi, i am chaeynz</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/htmx.org@2"></script>
+  <script src="/js/ticker.js"></script>
 </body>
 </html>
