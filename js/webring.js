@@ -1,6 +1,6 @@
 // Webring widget: fetches the canonical member list and wires up the
 // Previous / Random / Next links relative to whichever site is showing it.
-const WEBRING_SRC = "http://0.0.0.0:8000/webring/members.json";
+const WEBRING_SRC = "http://kernel.gay/webring/members.json";
 
 // Normalize a host so "www.foo.com" and "foo.com" compare equal.
 function normalizeHost(host) {
